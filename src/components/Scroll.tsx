@@ -1,11 +1,13 @@
 import * as React from "react";
 
-const Scroll = (props) => {
+interface ScrollProps {}
+
+const Scroll: React.FunctionComponent<ScrollProps> = ({ children }) => {
   return (
     <div
       style={{ overflow: "scroll", border: "5px solid black", height: "800px" }}
     >
-      {props.children}
+      {children}
     </div>
   );
 };
